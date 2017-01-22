@@ -12,8 +12,8 @@ namespace Solutions
             var result1 = input.Sum(x => CalcPaperArea(x));
             var result2 = input.Sum(x => CalcRibbonLength(x));
 
-            Console.WriteLine($"Day 01: Result part 1: {result1}");   // 1588178
-            Console.WriteLine($"Day 01: Result part 2: {result2}");   // 3783758
+            Console.WriteLine($"Day 02: Result part 1: {result1}");   // 1588178
+            Console.WriteLine($"Day 02: Result part 2: {result2}");   // 3783758
             Console.WriteLine();
         }
 
