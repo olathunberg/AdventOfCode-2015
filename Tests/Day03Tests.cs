@@ -8,7 +8,7 @@ namespace Tests
     public class Day03Tests
     {
         [TestMethod]
-        public void Part1()
+        public void Day03Part1()
         {
             Assert.IsTrue(Day03.VisitedHouses(">").Count == 2);
             Assert.IsTrue(Day03.VisitedHouses("^>v<").Count == 4);
@@ -16,7 +16,7 @@ namespace Tests
         }
 
         [TestMethod]
-        public void Part2()
+        public void Day03Part2()
         {
             Assert.IsTrue(Day03.VisistedWithRobotSanta("^v") == 3);
             Assert.IsTrue(Day03.VisistedWithRobotSanta("^>v<") == 3);

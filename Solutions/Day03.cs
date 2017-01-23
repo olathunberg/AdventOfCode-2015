@@ -37,7 +37,7 @@ namespace Solutions
 
         public static int VisistedWithRobotSanta(string input)
         {
-            var santaPath = VisitedHouses(String.Concat (input.Where((x, idx) => idx % 2 == 0)));
+            var santaPath = VisitedHouses(String.Concat(input.Where((x, idx) => idx % 2 == 0)));
             var roboPath = VisitedHouses(String.Concat(input.Where((x, idx) => idx % 2 != 0)));
 
             var totalCount = santaPath.Select(x => x.Key).Union(roboPath.Select(x => x.Key)).Distinct().Count();
