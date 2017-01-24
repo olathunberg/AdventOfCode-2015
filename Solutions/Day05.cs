@@ -13,7 +13,7 @@ namespace Solutions
             var result2 = input.Count(z => IsNice2(z));
 
             Console.WriteLine($"Day 05: Result part 1: {result1}");   // 236
-            Console.WriteLine($"Day 05: Result part 2: {result2}");   // 
+            Console.WriteLine($"Day 05: Result part 2: {result2}");   // 51
             Console.WriteLine();
         }
 
