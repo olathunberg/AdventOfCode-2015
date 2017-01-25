@@ -36,7 +36,7 @@ namespace Solutions
                 }
             }
 
-            Console.WriteLine($"Day 07: Result part 2: {dict["a"]}");   // 15343601
+            Console.WriteLine($"Day 07: Result part 2: {dict["a"]}");   // 14134
             Console.WriteLine();
         }
 
