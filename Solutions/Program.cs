@@ -11,7 +11,8 @@ namespace Solutions
             //    Day03.Solve();
             //    Day04.Solve();
             //    Day05.Solve();
-            Day06.Solve();
+            //Day06.Solve();
+            Day07.Solve();
 
             Console.WriteLine("Press any key to exit");
             Console.ReadKey();
