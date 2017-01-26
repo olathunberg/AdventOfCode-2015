@@ -10,9 +10,9 @@ namespace Solutions
             var input = System.IO.File.ReadAllLines(@"Input\Day05.txt");
 
             var result1 = input.Count(z => IsNice1(z));
-            var result2 = input.Count(z => IsNice2(z));
-
             Console.WriteLine($"Day 05: Result part 1: {result1}");   // 236
+
+            var result2 = input.Count(z => IsNice2(z));
             Console.WriteLine($"Day 05: Result part 2: {result2}");   // 51
             Console.WriteLine();
         }

@@ -13,6 +13,7 @@ namespace Solutions
                 ParseLine(line, ref lights);
 
             var result1 = Count(lights, true);
+            Console.WriteLine($"Day 06: Result part 1: {result1}");   // 400410
 
             var lights2 = new int[1000, 1000];
             foreach (var line in input)
@@ -20,7 +21,6 @@ namespace Solutions
 
             var result2 = Count2(lights2);
 
-            Console.WriteLine($"Day 06: Result part 1: {result1}");   // 400410
             Console.WriteLine($"Day 06: Result part 2: {result2}");   // 15343601
             Console.WriteLine();
         }

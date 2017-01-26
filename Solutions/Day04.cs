@@ -12,9 +12,9 @@ namespace Solutions
             var input = "bgvyzdsv";
 
             var result1 = GetFirstValueWith5zeroInHash(input, 5, 1);
-            var result2 = GetFirstValueWith5zeroInHash(input, 6, result1);
-
             Console.WriteLine($"Day 04: Result part 1: {result1}");   // 254575
+
+            var result2 = GetFirstValueWith5zeroInHash(input, 6, result1);
             Console.WriteLine($"Day 04: Result part 2: {result2}");   // 1038736
             Console.WriteLine();
         }

@@ -10,9 +10,9 @@ namespace Solutions
             var input = System.IO.File.ReadAllText(@"Input\Day03.txt");
 
             var result1 = VisitedHouses(input).Count;
-            var result2 = VisistedWithRobotSanta(input);
-
             Console.WriteLine($"Day 03: Result part 1: {result1}");   // 2565
+
+            var result2 = VisistedWithRobotSanta(input);
             Console.WriteLine($"Day 03: Result part 2: {result2}");   // 2639
             Console.WriteLine();
         }

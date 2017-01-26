@@ -10,9 +10,9 @@ namespace Solutions
             var input = System.IO.File.ReadAllLines(@"Input\Day02.txt");
 
             var result1 = input.Sum(x => CalcPaperArea(x));
-            var result2 = input.Sum(x => CalcRibbonLength(x));
-
             Console.WriteLine($"Day 02: Result part 1: {result1}");   // 1588178
+
+            var result2 = input.Sum(x => CalcRibbonLength(x));
             Console.WriteLine($"Day 02: Result part 2: {result2}");   // 3783758
             Console.WriteLine();
         }

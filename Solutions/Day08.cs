@@ -52,13 +52,13 @@ namespace Solutions
         {
             var temp = input.ToCharArray();
             var sb = new StringBuilder();
+
             sb.Append('"');
             for (int i = 0; i < temp.Length; i++)
             {
                 if (temp[i] == '\\' || temp[i] == '"')
-                {
                     sb.Append('\\');
-                }
+
                 sb.Append(temp[i]);
             }
             sb.Append('"');
