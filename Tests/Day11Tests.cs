@@ -18,10 +18,5 @@ namespace Tests
             Assert.AreEqual("abcdffaa", Day11.GetNetPass("abcdefgh"));
             Assert.AreEqual("ghjaabcc", Day11.GetNetPass("ghijklmn"));
         }
-
-        [TestMethod]
-        public void Day11Part2()
-        {
-        }
     }
 }
