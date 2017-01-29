@@ -22,7 +22,7 @@ namespace Solutions
         {
             var distances = input.Select(x => x.ParseLine()).ToList();
             var places = distances.SelectMany(x => new string[] { x.Item1, x.Item2 }).Distinct().ToList();
-            var permutations = places.GetPermutations(places.Count);
+            var permutations = places.GetPermutations();
 
             var result1 = permutations.Select(x => x.GetDistance(distances)).Min();
             return result1;
@@ -32,7 +32,7 @@ namespace Solutions
         {
             var distances = input.Select(x => x.ParseLine()).ToList();
             var places = distances.SelectMany(x => new string[] { x.Item1, x.Item2 }).Distinct().ToList();
-            var permutations = places.GetPermutations(places.Count);
+            var permutations = places.GetPermutations();
 
             var result1 = permutations.Select(x => x.GetDistance(distances)).Max();
             return result1;
@@ -49,15 +49,6 @@ namespace Solutions
             return route
                 .Windowed(2)
                 .Sum(x => distances.First(z => (z.Item1 == x[0] && z.Item2 == x[1]) || (z.Item1 == x[1] && z.Item2 == x[0])).Item3);
-        }
-
-        private static IEnumerable<IEnumerable<T>> GetPermutations<T>(this IEnumerable<T> list, int length)
-        {
-            if (length == 1) return list.Select(t => new T[] { t });
-
-            return GetPermutations(list, length - 1)
-                .SelectMany(t => list.Where(e => !t.Contains(e)),
-                    (t1, t2) => t1.Concat(new T[] { t2 }));
         }
     }
 }
