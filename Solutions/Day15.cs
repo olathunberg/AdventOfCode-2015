@@ -29,7 +29,7 @@ namespace Solutions
         public static IEnumerable<(long score, long calories)> GetAllRecipeScores((int, Ingredient)[] ingredients)
         {
             var perms = Enumerable.Range(1, 99)
-                          .GetCombinations(ingredients.Length)
+                          .GetPermutations(ingredients.Length)
                           .AsParallel()
                           .Where(x => x.Sum() == 100)
                           .ToList();

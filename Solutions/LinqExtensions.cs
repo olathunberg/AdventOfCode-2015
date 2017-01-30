@@ -10,21 +10,12 @@ namespace Solutions
             return GetPermutations<T>(list, list.Count());
         }
 
-        private static IEnumerable<IEnumerable<T>> GetPermutations<T>(this IEnumerable<T> list, int length)
+        public static IEnumerable<IEnumerable<T>> GetPermutations<T>(this IEnumerable<T> list, int length)
         {
             if (length == 1) return list.Select(t => new T[] { t });
 
             return GetPermutations(list, length - 1)
                 .SelectMany(t => list.Where(e => !t.Contains(e)),
-                    (t1, t2) => t1.Concat(new T[] { t2 }));
-        }
-
-        public static IEnumerable<IEnumerable<T>> GetCombinations<T>(this IEnumerable<T> list, int length)
-        {
-            if (length == 1) return list.Select(t => new T[] { t });
-
-            return GetPermutations(list, length - 1)
-                .SelectMany(t => list,
                     (t1, t2) => t1.Concat(new T[] { t2 }));
         }
 
