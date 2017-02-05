@@ -23,8 +23,8 @@ namespace Solutions
             //Day15.Solve();
             //Day16.Solve();
             //Day17.Solve();
-            Day18.Solve();
-            //Day19.Solve();
+            //Day18.Solve();
+            Day19.Solve();
             //Day20.Solve();
             //Day21.Solve();
             //Day22.Solve();
