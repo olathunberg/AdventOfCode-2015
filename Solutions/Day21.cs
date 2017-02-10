@@ -117,12 +117,12 @@ namespace Solutions
                             yield return (costSum, damageSum, armorSum);
                         }
         }
-    }
 
-    public struct GameCharacter
-    {
-        public int HitPoints;
-        public int Damage;
-        public int Armor;
+        public struct GameCharacter
+        {
+            public int HitPoints;
+            public int Damage;
+            public int Armor;
+        }
     }
 }

@@ -8,7 +8,7 @@ namespace Tests
     public class Day21Tests
     {
         [TestMethod]
-        public void Day20Part1()
+        public void Day21Part1()
         {
             var boss = new GameCharacter
             {

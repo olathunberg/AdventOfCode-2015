@@ -45,7 +45,7 @@ namespace Tests
                 "HOH"
             };
             Assert.AreEqual(3, StepsFromTargetToElectron(indata1));
-            Assert.AreEqual(3, AStarStepsCounter(indata1));
+            //Assert.AreEqual(3, AStarStepsCounter(indata1));
 
             var indata2 = new string[]
             {
