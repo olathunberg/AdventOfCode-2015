@@ -19,7 +19,7 @@ namespace Tests
                 "inc a"
             };
 
-            Assert.AreEqual(2, ProcessInstructions(indata)["a"]);
+            Assert.AreEqual(2, ProcessInstructions(indata, false)["a"]);
         }
     }
 }
